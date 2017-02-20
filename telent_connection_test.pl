@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-#this script test ping for host in host.txt
+#this script test telent connection for hosts in files
 #And print in stdout
 #Version 1 By Geraud
 
@@ -37,7 +37,7 @@ while (my $line = <$data>){
             print "$fields[0] is avaiblable and SSH_OK\n";
         }
         else{
-                print "$fields[0] is not available \n [Telent_NOK] ";
+                print "$fields[0] is not available \n [Telnet and SSH NOK] ";
                 print $fh "$fields[0];$fields[1]\n";
         }
 
